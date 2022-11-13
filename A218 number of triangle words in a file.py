@@ -1,5 +1,7 @@
 from math import sqrt
 
+file_path = 'Script 3.txt'
+
 
 def word_val(word):
     word_val_count = 0
@@ -21,7 +23,7 @@ def triangle(word):
 
 
 count = 0
-with open('Script 3.txt') as file:
+with open(file_path) as file:
     for line in file:
         words = line.split('","')
         words[0] = words[0][1:]
